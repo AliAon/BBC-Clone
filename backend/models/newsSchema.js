@@ -12,6 +12,7 @@ const newsSchema=new mongoose.Schema({
 newsSchema.pre('find',function(next){
     this.populate({
         path:'category',
+        select:"-_id -slug"
         })
     next()
  }) 

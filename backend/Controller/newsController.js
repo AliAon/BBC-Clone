@@ -3,6 +3,7 @@ const News = require("../models/newsSchema")
 exports.GetNews=async(req,res)=>{
     try {
      const result=await News.find()
+     res.set()
      res.json(result)
     //    res.send('GET News')
     } catch (error) {
