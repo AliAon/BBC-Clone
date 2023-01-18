@@ -1,0 +1,26 @@
+.footer{
+    background-color: #4c4c4c;
+    color: #fff;
+    padding: 20px;
+}
+.footer__links{
+    list-style: none;
+    padding: 0px;
+}
+.footer__links li{
+    line-height: 36px;
+    font-size: 14px;
+}
+.footer__legal_links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.footer__legal_links li{
+    font-size: 14px;
+}
+
+.footer__copyright_text{
+    font-size: 14px;
+    text-align: center;
+}

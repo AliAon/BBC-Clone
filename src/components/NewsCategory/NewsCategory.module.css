@@ -1,0 +1,80 @@
+.cate-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cat-title {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+.title-hr {
+  color: red;
+  height: 5px;
+  width: 75px!important;
+  margin-left: 15px;
+  opacity: 1;
+  background-color: red;
+}
+.side-nav-header {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #e91802;
+}
+.news-item {
+  position: relative;
+  width: 100%;
+}
+.hero__news-title {
+  position: absolute;
+  left: 30px;
+  top: 70%;
+  color: rgb(255, 255, 255);
+}
+.hero__summeray {
+  position: absolute;
+  left: 30px;
+  top: 80%;
+  color: rgb(255, 255, 255);
+}
+.hero__tag--news {
+  position: absolute;
+  left: 30px;
+  top: 88%;
+  color: rgb(255, 255, 255);
+}
+.img{
+  width: 100%;
+}
+.circle-post{
+  background-color: red;
+  border-radius: 50px;
+  display: flex;
+  height: 55px;
+  width: 55px;
+  font-size: 24px;
+  justify-content: center;  
+  align-items: center;
+  color: white;
+  font-style: italic;
+
+}
+.posts-list{
+  background: #2f2f2f;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.side-post-card{
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.side-post-title{
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 0px;
+  line-height: 26px;
+}

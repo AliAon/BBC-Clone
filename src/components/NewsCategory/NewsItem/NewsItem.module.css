@@ -1,0 +1,14 @@
+.hero__tag--news{  
+    position: absolute;
+    left: 30px;
+    top: 88%;
+    color: rgb(255, 255, 255);
+}
+.img{
+    width: 100%;
+}
+.card-title{
+    font-size: 24px;
+    color: #000!important;
+    text-decoration: none!important;
+}

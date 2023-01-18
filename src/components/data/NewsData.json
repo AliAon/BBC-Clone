@@ -1,0 +1,151 @@
+[
+    {  
+        "cate_slug":"hero",
+        "title":"News",
+        "data":[
+            {
+                "id":"1",
+                "title":"Brazil top court includes Bolsonaro in riot probe",
+                "image":"https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/14405/production/_128294928_gettyimages-1244408544.jpg",
+                "exerpt":"From droughts and wildfires to floods and landslides - why extreme weather may be the new norm.",
+                "tag":"Latin America & Caribbean"
+            },
+            {
+                "id":"2",
+                "title":" Four unanswered questions about the Biden documents",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/0F6D/production/_128294930__127674371_4e5708a20f25d4bba36435d1496ea928bff568370_17_3677_20691000x563.jpg",
+                "exerpt":"Alexei Navalny says he has been denied access to hospital treatment by Russian prison officials.",
+                "tag":"US & Canada"
+            },
+            {
+                "id":"4",
+                "title":"Russia claims victory in bloody battle for Soledar",
+                "image":"https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/63CD/production/_128294552_4eee87c539f85baef275b7dd92dc0e425b550f1f11_257_2059_11591000x563.jpg",
+                "exerpt":" The singer was the only child of the King of Rock 'n' Roll, Elvis Presley.",
+                "tag":"EUROPE"
+            },
+            {
+                "id":"5",
+                "title":" Leeds' 'best performance' despite Villa defeat",
+                "image":"https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/40A5/production/_128294561_bailey_reuters.jpg",
+                "exerpt":" The singer was the only child of the King of Rock 'n' Roll, Elvis Presley.",
+                "tag":"Football"
+            }
+
+        ]
+       
+    },
+    {  
+        "cate_slug":"news",
+        "title":"News",
+        "data":[
+            {
+                "id":"6",
+                "title":" California's hydro-climate whiplash explained ",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/BED1/production/_128294884_p0dw943f.jpg",
+                "exerpt":"From droughts and wildfires to floods and landslides - why extreme weather may be the new norm.",
+                "tag":"USA & CANADA"
+            },
+            {
+                "id":"7",
+                "title":"  Concern grows for jailed Putin critic Navalny ",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/0F6D/production/_128294930__127674371_4e5708a20f25d4bba36435d1496ea928bff568370_17_3677_20691000x563.jpg",
+                "exerpt":"Alexei Navalny says he has been denied access to hospital treatment by Russian prison officials.",
+                "tag":"EUROPE"
+            },
+            {
+                "id":"8",
+                "title":"Lisa Marie to be buried next to son at Graceland ",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/121A5/production/_128294147_gettyimages-106773013.jpg",
+                "exerpt":" The singer was the only child of the King of Rock 'n' Roll, Elvis Presley.",
+                "tag":"EUROPE"
+            }
+
+        ]
+       
+    },
+    {
+        "cate_slug":"sport",
+        "title":"Sport",
+        "data":[
+            {
+                "id":"9",
+                "title":"Manchester derby set to be closest tie in years",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/1618D/production/_128290509_gettyimages-1246177665.jpg",
+                "exerpt":"Manchester United host Manchester City on Saturday in what could be one of their most evenly matched Premier League encounters in years.",
+                "tag":"FOOTBALL"
+            },
+            {
+                "id":"10",
+                "title":"The essential guide to the NFL play-offs",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/1481E/production/_128289938_bbc-sport-index-imagery-3-split-images-gradient-dd4800e1-9a1d-4f84-829b-6c06805a2ca5.png",
+                "exerpt":"The Buffalo Bills are riding a wave of emotion as the NFL play-offs start, while the Kansas City Chiefs and Philadelphia Eagles are also among the Super Bowl favourites.",
+                "tag":"AMERICAN FOOTBALL"
+            },
+            {
+                "id":"11",
+                "title":"No Saudi Arabian offer for Messi - Balague ",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/EA7D/production/_128292006_lionelmessi.jpg",
+                "exerpt":"Paris St-Germain forward Lionel Messi has not been approached by Al Hilal and would not consider a move to Saudi Arabia, Spanish football expert Guillem Balague says.",
+                "tag":"FOOTBALL"
+            }
+        ]
+    },
+    {
+        "cate_slug":"asia-news",
+        "title":"Asia News",
+        "data":[
+            {
+                "id":"12",
+                "title":"The US is beating China in the battle for chips ",
+                "image":"https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/10FA2/production/_128283596_gettyimages-1422453695.jpg",
+                "exerpt":"The rivalry is entering a new phase, with global players increasingly caught in the crossfire.  ",
+                "tag":"ASIA-PACIFIC"
+            },
+            {
+                "id":"13",
+                "title":"Covid cases in China touch 900 million - study ",
+                "image":"https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/18C2/production/_128283360_0b4a3a7e46bef35d2507ba93784f7e94aed2d67b0_0_6164_41091000x667.jpg",
+                "exerpt":"This comes amid warnings from a top scientist that cases in rural areas will surge over the new year.",
+                "tag":"CHINA"
+            },
+            {
+                "id":"14",
+                "title":"Japan to release radioactive water into sea this year",
+                "image":"https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/129CE/production/_128283267_52be9026e75266e81d10a6dcbdcd6e65e3118a50.jpg",
+                "exerpt":"Paris St-Germain forward Lionel Messi has not been approached by Al Hilal and would not consider a move to Saudi Arabia, Spanish football expert Guillem Balague says.",
+                "tag":"ASIA"
+            }
+        ]
+    },
+    {
+        "cate_slug":"features-and-events",
+        "title":"Features and Events",
+        "data":[
+            {
+                "id":"15",
+                "title":"The simple error that 16% of us make",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/ibroadcast/images/live/p0/dv/x2/p0dvx23p.jpg",
+                "exerpt":"Being unable to tell left from right can have serious consequences at times ",
+                "tag":"FUTURE"
+            },
+            {
+                "id":"16",
+                "title":"The Versailles most people don't get to see",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/ibroadcast/images/live/p0/dv/y4/p0dvy4f8.jpg",
+                "exerpt":" To see the grand vision for Louis XIV's ultimate 'bachelor pad', grab a bike   ",
+                "tag":"TRAVEL"
+            },
+            {
+                "id":"17",
+                "title":"The companies that burn out young grads ",
+                "image":"https://ichef.bbc.co.uk/wwhp/624/ibroadcast/images/live/p0/dv/l8/p0dvl8x4.jpg",
+                "exerpt": "There was just a steady churn of young, impressionable workers",
+                "tag":"WORKLIFE"
+            }
+        ]
+    }
+ 
+
+]
+ 

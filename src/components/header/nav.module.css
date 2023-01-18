@@ -1,0 +1,10 @@
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style: none;
+}
+.nav-color{
+    color: white!important;
+}
+

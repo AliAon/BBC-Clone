@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import { Route, Router, Routes } from 'react-router';
 import './App.css';
-
+import AsiaNews from './components/pages/AsiaNews';
+import Home from './components/pages/Home';
+import News from './components/pages/News';
+import Single from './components/pages/Single';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/'      element={ <Home/>}/>
+      <Route path='/news'  element={ <News/>}/>
+      <Route path='/news/:slug'  element={ <Single/>}/>
+      <Route path='/news/asia-news' element={<AsiaNews/>}/>
+
+    </Routes>
+   
   );
 }
 
