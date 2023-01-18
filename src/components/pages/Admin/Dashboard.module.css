@@ -39,6 +39,23 @@
     padding-top: 5px;
 
 }
-table.table.table-striped.table-bordered.table-hover {
+table{
     background-color: white!important;
+}
+.post-data{
+    background-color: white;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding:20px
+}
+.post-data-h6{
+    color: #000000;
+    line-height: 2rem;
+}
+.add-post-space{
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    padding:20px
 }

@@ -2,13 +2,32 @@ import { Col, Container } from "react-bootstrap"
 import classes from './Dashboard.module.css'
 import Row from "react-bootstrap/Row"
 import Table from 'react-bootstrap/Table';
+import { useEffect, useState } from "react";
+import Button from 'react-bootstrap/Button';
+
 
 const Dashboard=()=>{
 
-    const GetNews=()=>{
-        fetch('')
+    const [news,setnews]=useState([])
 
+    const GetNews=async()=>{
+        const GetNews=await fetch('http://localhost:4000/api/news')
+        const news=await GetNews.json()
+        setnews(news)
     }
+    useEffect(()=>{
+       GetNews()
+    },[])
+    const newsList=news.map((el)=>{
+        return (
+            <tr>
+                <td>{el.title}</td>
+                <td>{el.category.title}</td>
+                <td><Button variant="outline-danger" size="sm">Remove</Button></td>
+                <td><Button variant="outline-secondary" size="sm">Edit</Button></td>
+            </tr>  
+        )
+    })
 
     return <Container fluid className="gx-0">
         <Row className={classes["dashborad-header"]}>
@@ -29,38 +48,29 @@ const Dashboard=()=>{
                 <Container>
                     <Row>
                         <Col>
-                            <Table striped bordered hover>
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Post</th>
-                                        <th>Category</th>
-                                        <th>Delete</th>
-                                        <th>Update</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                    <td>3</td>
-                                    <td colSpan={2}>Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
+                        <div className={classes["post-data"]}>
+                            <h6 className={classes["post-data-h6"]}>News</h6>
+                                <Table striped bordered hover>
+                                    <thead>
+                                        <tr>
+                                            <th>Post</th>
+                                            <th>Category</th>
+                                            <th>Delete</th>
+                                            <th>Update</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {newsList}                                 
+                                    </tbody>
+                                </Table>
+                        </div>
+                            
                         </Col>
                         <Col>
+                            <div className={classes["add-post-space"]}>
+                                <h6 className={classes["post-data-h6"]}>Add Post</h6>
+ 
+                            </div>
                         </Col>
                     </Row>
                 </Container>
