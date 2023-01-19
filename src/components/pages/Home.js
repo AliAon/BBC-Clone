@@ -10,14 +10,6 @@ import Reels from "../Reels/Reels"
 import NewsCategory from "../NewsCategory/NewsCategory"
 import NewsSidebar from "../NewsCategory/NewsSidebar"
 function Home() {
-//   const GetNews=async()=>{
-//     const GetNews=await (await fetch('http://localhost:4000/api/news')).json()
-//     const sportnews=GetNews.filter((el)=>{
-//       return el.category.title==='News'
-//     })
-//     console.log(sportnews)
-//  }
-//  GetNews()
   return (
     <Fragment>
       <Header />
