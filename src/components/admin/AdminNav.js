@@ -3,8 +3,8 @@ import classes from "./sidenav.module.css"
 const AdminNav=()=>{
     return(
         <div className={classes["side-nav"]}>
-                         <button className={classes["list-heading"]}><Link to='/#'>News</Link></button> 
-                         <button className={classes["list-heading"]}><Link to='/#'>Categories</Link></button> 
+                         <button className={classes["list-heading"]}><Link to='/admin/news'>News</Link></button> 
+                         <button className={classes["list-heading"]}><Link to='/admin/categories'>Categories</Link></button> 
         </div>
     )
 

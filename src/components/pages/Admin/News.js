@@ -2,8 +2,8 @@ import { Col, Container } from "react-bootstrap"
 import classes from './Dashboard.module.css'
 import Row from "react-bootstrap/Row"
 import AdminNav from "../../admin/AdminNav";
-import News from "../../admin/AdminPages/News/PageNews";
-const Dashboard=()=>{
+import PageNews from "../../admin/AdminPages/News/PageNews";
+const News=()=>{
     return <Container fluid className="gx-0 ">
         <Row className={classes["dashborad-header"]}>
             <Col>
@@ -15,10 +15,10 @@ const Dashboard=()=>{
                 <AdminNav/>
             </Col>
             <Col lg={11} className="vh-100">
-                <News/>
+                <PageNews/>
             </Col>
         </Row>
     </Container>
 
 }
-export default Dashboard
+export default News

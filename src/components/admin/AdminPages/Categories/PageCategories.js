@@ -4,54 +4,53 @@ import Row from "react-bootstrap/Row"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { Fragment, useEffect, useState } from "react";
-import AddPostForm from "./Components/AddPostForm";
+import AddCategoryForm from "./Components/AddCategoryForm";
 
-const News=()=>{
-    const [news,setnews]=useState([])
+const PageCategories=()=>{
+    const [category,setCategory]=useState([])
 
-    const GetNews=async()=>{
-        const GetNews=await fetch('http://localhost:4000/api/news')
-        const news=await GetNews.json()
-        setnews(news)
+    const Getcategory=async()=>{
+        const Getcategory=await fetch('http://localhost:4000/api/categories')
+        const category=await Getcategory.json()
+        setCategory(category)
     }
 
     useEffect(()=>{
-       GetNews()
+       Getcategory()
     },[])
     async function RemoveHandler (id){
-        const GetNews=await fetch(`http://localhost:4000/api/news/${id}`,
+        const Getcategory=await fetch(`http://localhost:4000/api/categories/${id}`,
         {
             method:'DELETE'
         })
-        const news=await GetNews.json()
+        const category=await Getcategory.json()
     }
-    const newsList=news.map((el)=>{
+    const categoryList=category.map((el)=>{
         const id=el._id
         return (
             <tr key={el.id}>
                 <td>{el.title}</td>
-                <td>{el.category.title}</td>
                 <td><Button variant="outline-danger" onClick={RemoveHandler.bind(null,id)} size="sm">Remove</Button></td>
                 <td><Button variant="outline-secondary" size="sm">Edit</Button></td>
             </tr>  
         )
     })
     const RefreshHandler=async()=>{
-        const GetNews=await fetch('http://localhost:4000/api/news')
-        const news=await GetNews.json()
-        setnews(news)
+        const Getcategory=await fetch('http://localhost:4000/api/categories')
+        const category=await Getcategory.json()
+        setCategory(category)
     }
 
     return(
+        
         <div className={classes["side-content"]}>
             <Container>
                 <Row>
-                    {console.log(news)}
                     <Col>
                     <div className={classes["post-data"]}>
-                        <Row className=" justify-content-between">
+                        <Row className={classes["mb-4"]}>
                             <Col>
-                              <h6 className={classes["post-data-h6"]}>News</h6>
+                              <h6 className={classes["post-data-h6"]}>Categories</h6>
                             </Col>
                             <Col>
                                 <div className={classes["refreshbtn"]}>
@@ -64,20 +63,19 @@ const News=()=>{
                           <Table striped bordered hover>
                                 <thead>
                                     <tr>
-                                        <th>Post</th>
                                         <th>Category</th>
                                         <th>Delete</th>
                                         <th>Update</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {newsList}                                 
+                                    {categoryList}                                 
                                 </tbody>
                             </Table>
                     </div>
                     </Col>
                     <Col>
-                    <AddPostForm/>
+                    <AddCategoryForm/>
                     </Col>
                 </Row>
         </Container>
@@ -86,4 +84,4 @@ const News=()=>{
     )
 
 }
-export default News
+export default PageCategories

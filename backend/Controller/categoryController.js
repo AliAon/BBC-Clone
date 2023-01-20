@@ -16,3 +16,14 @@ exports.AddCategory=async(req,res)=>{
         res.send('error')
     }
 }
+
+exports.RemoveCategory=async(req,res)=>{
+    try {
+     const result=await Category.findByIdAndRemove({_id:req.params.cateId})
+     res.send('Removed')
+
+    } catch (error) {
+        res.send('error')
+    }
+}
+
