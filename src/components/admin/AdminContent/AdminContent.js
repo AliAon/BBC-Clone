@@ -20,7 +20,7 @@ const AdminContent=()=>{
     },[])
     const newsList=news.map((el)=>{
         return (
-            <tr>
+            <tr key={el.id}>
                 <td>{el.title}</td>
                 <td>{el.category.title}</td>
                 <td><Button variant="outline-danger" size="sm">Remove</Button></td>
@@ -28,14 +28,32 @@ const AdminContent=()=>{
             </tr>  
         )
     })
+    const RefreshHandler=async()=>{
+        const GetNews=await fetch('http://localhost:4000/api/news')
+        const news=await GetNews.json()
+        setnews(news)
+    }
+
     return(
         <div className={classes["side-content"]}>
             <Container>
                 <Row>
+                    {console.log(news)}
                     <Col>
                     <div className={classes["post-data"]}>
-                        <h6 className={classes["post-data-h6"]}>News</h6>
-                            <Table striped bordered hover>
+                        <Row className=" justify-content-between">
+                            <Col>
+                              <h6 className={classes["post-data-h6"]}>News</h6>
+                            </Col>
+                            <Col>
+                                <div className={classes["refreshbtn"]}>
+                                  <Button variant="outline-success" onClick={RefreshHandler}>Refresh</Button>
+                                </div>
+                            </Col>
+                        </Row>
+                      
+                     
+                          <Table striped bordered hover>
                                 <thead>
                                     <tr>
                                         <th>Post</th>

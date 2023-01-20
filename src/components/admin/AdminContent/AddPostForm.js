@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row"
 import { Col, Container } from "react-bootstrap"
 import Button from 'react-bootstrap/Button';
 import { json } from "react-router";
-const AddPostForm=()=>{
+const AddPostForm=(props)=>{
     const [GetCategories,SetCategories]=useState([])
     const [title,settitle]=useState("")
     const [excerpt,setexcerpt]=useState("")
@@ -58,7 +58,11 @@ const AddPostForm=()=>{
         formdata.append('featuredimage',imagefile)
         formdata.append('category',category)
          AddPost(formdata)
-        
+         settitle('')
+         setexcerpt('')
+         setcategory('')
+         setimage('')
+         settag('')
         }
     
     return(
@@ -67,31 +71,32 @@ const AddPostForm=()=>{
                     <h6 className={classes["post-data-h6"]}>Add Post</h6>
                     <Form onSubmit={submitHandler}  encType="multipart/form-data">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control type="text" placeholder="Title" onChange={titleHandler}/>
+                            <Form.Control type="text" placeholder="Title" value={title} onChange={titleHandler}/>
                         </Form.Group>
                             <Form.Control className="mb-3"
                             as="textarea"
                             placeholder="Exerpt"
                             style={{ height: '100px' }}
                             onChange={excerpthandler}
+                            value={excerpt}
                             />
                         <Row>
                             <Col>
                                 <Form.Label className={classes["form-label"]} >Categories</Form.Label>
-                                <Form.Select aria-label="Default select example" className="mb-3" onChange={selectHandler}>
+                                <Form.Select aria-label="Default select example" className="mb-3"   onChange={selectHandler}>
                                 {categoryList}                                      
                                 </Form.Select>
                             </Col>
                             <Col>
                                 <Form.Label className={classes["form-label"]}>Tags</Form.Label>
                                 <Form.Group controlId="formFile" className="mb-3">
-                                <Form.Control type="text"  size="sm"  placeholder="Tags"  onChange={tagHandler}/>
+                                <Form.Control type="text"  size="sm"  placeholder="Tags"  value={tag} onChange={tagHandler}/>
                                 </Form.Group>
                             </Col>
                             <Col>
                                 <Form.Label className={classes["form-label"]}>Featured Image</Form.Label>
                                 <Form.Group controlId="formFile" className="mb-3">
-                                <Form.Control type="file"  size="sm"  onChange={fileHandler}/>
+                                <Form.Control type="file"  size="sm" value={imagefile}   onChange={fileHandler}/>
                                 </Form.Group>
                             </Col>
                             
