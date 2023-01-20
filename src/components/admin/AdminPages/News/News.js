@@ -4,9 +4,9 @@ import Row from "react-bootstrap/Row"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { Fragment, useEffect, useState } from "react";
-import AddPostForm from "./AddPostForm";
+import AddPostForm from "./Components/AddPostForm";
 
-const AdminContent=()=>{
+const News=()=>{
     const [news,setnews]=useState([])
 
     const GetNews=async()=>{
@@ -86,4 +86,4 @@ const AdminContent=()=>{
     )
 
 }
-export default AdminContent
+export default News

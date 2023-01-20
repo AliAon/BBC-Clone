@@ -2,7 +2,7 @@ import { Col, Container } from "react-bootstrap"
 import classes from './Dashboard.module.css'
 import Row from "react-bootstrap/Row"
 import AdminNav from "../../admin/AdminNav";
-import AdminContent from "../../admin/AdminContent/AdminContent";
+import News from "../../admin/AdminPages/News/News";
 const Dashboard=()=>{
     return <Container fluid className="gx-0 ">
         <Row className={classes["dashborad-header"]}>
@@ -15,7 +15,7 @@ const Dashboard=()=>{
                 <AdminNav/>
             </Col>
             <Col lg={11} className="vh-100">
-                <AdminContent/>
+                <News/>
             </Col>
         </Row>
     </Container>

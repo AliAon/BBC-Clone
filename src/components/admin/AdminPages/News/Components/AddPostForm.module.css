@@ -1,0 +1,15 @@
+.add-post-space{
+    height: 440px;
+    background-color: white;
+    border-radius: 5px;
+    padding:20px;
+    overflow-y: auto;
+}
+.post-data-h6{
+ color: #000000d4;
+}
+.form-label {
+    margin-bottom: 0.5rem;
+    color: #000000d4;
+    font-size: 14px;
+}

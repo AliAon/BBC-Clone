@@ -26,3 +26,13 @@ exports.AddNews=async(req,res)=>{
         res.send('error')
     }
 }
+exports.RemoveNews=async(req,res)=>{
+    try {
+     const result=await News.findByIdAndRemove({_id:req.params.newsId})
+     res.status('200')
+
+    } catch (error) {
+        res.send('error')
+    }
+}
+

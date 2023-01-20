@@ -1,0 +1,29 @@
+.side-content{
+    background-color: grey;
+    color: white;
+    height: 100vh;
+    padding-top: 10px;
+}
+table{
+    background-color: white!important;
+}
+.post-data{
+    background-color: white;
+    height: 440px;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding:20px
+}
+.post-data-h6{
+    color: #000000;
+    line-height: 2rem;
+}
+.refreshbtn{
+    text-align: right;
+    padding: 5px;
+}
+.refreshbtn button{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+}

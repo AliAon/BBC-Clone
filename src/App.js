@@ -12,8 +12,11 @@ function App() {
       <Route path='/news'  element={ <News/>}/>
       <Route path='/news/:slug'  element={ <Single/>}/>
       <Route path='/news/asia-news' element={<AsiaNews/>}/>
+      
+      {/*  admin componets */}
       <Route path='/admin' element={<Dashboard/>}/>
-
+      <Route path='/admin/news'      element={ <Home/>}/>
+      <Route path='/admin/categories'      element={ <Home/>}/>
     </Routes>
    
   );
