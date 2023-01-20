@@ -5,6 +5,9 @@
     padding:20px;
     overflow-y: auto;
 }
+.post-data-h6{
+ color: #000000d4;
+}
 .form-label {
     margin-bottom: 0.5rem;
     color: #000000d4;

@@ -3,9 +3,7 @@ const News = require("../models/newsSchema")
 exports.GetNews=async(req,res)=>{
     try {
      const result=await News.find()
-     res.set()
      res.json(result)
-    //    res.send('GET News')
     } catch (error) {
         res.send('error')
     }
@@ -13,8 +11,16 @@ exports.GetNews=async(req,res)=>{
 
 exports.AddNews=async(req,res)=>{
     try {
-     const result=await News.create(req.body)
-     res.send('News Added')
+        const url = req.protocol + '://' + req.get('host')
+        const news={
+            title:req.body.title,
+            image:url + '/uploads/images/' + req.file.filename,
+            excerpt:req.body.excerpt,
+            tag:req.body.tag ,
+            category:req.body.category
+        }
+     const result=await News.create(news)
+     res.json(result)
 
     } catch (error) {
         res.send('error')
